@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    color: black;
+    background: #f4dfc8db;
+    padding: 0;
+  }
+  h2, h3 {
+  color: #7ea6a2;
+}
+/*header*/
+    .Head{
+        font-size: 20px;
+        padding: 60px;
+        background-image: linear-gradient(#7ea6a2 , #f4dfc8db );
+        text-align: center;
+    }
+    .navbar {
+        display: flex;
+        position: sticky;
+        top: 0;
+        background: rgba(255, 255, 255, 0.259);
+    }
+
+    .navbar a {
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+
+    .navbar a:hover {
+    background-color: #7ea6a2b4;
+    color: black;
+    }
+/*main*/
+    main {
+    padding: 20px;
+    display: flex;
+    gap: 1.5rem;
+    }
+    #isi{
+        flex: 5;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .card {
+    background: rgba(255, 255, 255, 0.259);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.548);
+    border-radius: 5px;
+    padding: 20px;
+    }
+    .featured-image {
+        width: 100%;
+        max-height: 300px;
+      
+        object-fit: cover;
+        object-position: center;
+      }
+      
+/*aside*/
+aside {
+    flex: 1;
+    }
+    .profile img {
+    max-width: 160px;
+    }
+    .profile figcaption {
+    text-align: center;
+    }
+    .tokyo img {
+    max-width: 160px;
+    }
+    .tokyo figcaption {
+    text-align: center;
+    }
+    .tokyo table{
+        text-align: left;
+    }
+    header {
+        display: inline;
+    }
+    @media screen and (max-width: 1200px) {
+        main {
+          flex-flow: column nowrap;
+        }
+        main aside {
+          align-self: center;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .navbar {
+            justify-content: center;
+          }
+         
+          main aside {
+            align-self: stretch;
+          }
+      }
+   /*footer*/
+   footer {
+    padding: 20px;
+    color: black;
+    background-image: linear-gradient(#f4dfc8 , #d71e1443  );
+    text-align: center;
+    font-weight: bold;
+    }
